@@ -1,0 +1,23 @@
+{
+  "name": "juko-labs/php-coding-standards",
+  "description": "PHP coding standards for building WordPress applications.",
+  "type": "phpcodesniffer-standard",
+  "license": "MPL-2.0",
+  "minimum-stability": "dev",
+  "prefer-stable" : true,
+  "authors": [
+    {
+      "name": "Justin Kopepasah",
+      "email": "justin@kopepasah.com"
+    }
+  ],
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2",
+    "phpcompatibility/phpcompatibility-wp": "^2.1",
+    "squizlabs/php_codesniffer": "^3.5",
+    "wp-coding-standards/wpcs": "^2.2"
+  },
+  "scripts": {
+    "lint": "./vendor/bin/phpcs"
+  }
+}
