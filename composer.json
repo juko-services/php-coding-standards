@@ -18,6 +18,16 @@
     "wp-coding-standards/wpcs": "^2.2"
   },
   "scripts": {
-    "lint": "./vendor/bin/phpcs"
+    "post-install-cmd": [
+      "@post-update-or-install"
+    ],
+    "post-update-cmd": [
+      "@post-update-or-install"
+    ],
+    "post-update-or-install": [
+      "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run",
+      "\"vendor/bin/phpcs\" --config-set default_standard Juko Labs"
+    ],
+    "lint": "./vendor/bin/phpcs ."
   }
 }
