@@ -14,7 +14,9 @@
 
 	<!-- Use WordPress code standards, with a little extra. -->
 	<rule ref="WordPress-Extra">
+		<exclude name="Squiz.PHP.NonExecutableCode.Unreachable" />
 		<exclude name="Generic.Arrays.DisallowShortArraySyntax" />
+		<exclude name="WordPress.PHP.DisallowShortTernary" />
 	</rule>
 
 	<!-- Other generic standards we prefer. -->
