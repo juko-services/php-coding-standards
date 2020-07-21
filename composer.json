@@ -1,5 +1,5 @@
 {
-  "name": "juko-labs/php-coding-standards",
+  "name": "juko-services/php-coding-standards",
   "description": "PHP coding standards for building WordPress applications.",
   "type": "phpcodesniffer-standard",
   "license": "MPL-2.0",
@@ -26,7 +26,7 @@
     ],
     "post-update-or-install": [
       "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run",
-      "./vendor/bin/phpcs --config-set default_standard \"Juko Labs\""
+      "./vendor/bin/phpcs --config-set default_standard \"Juko\""
     ],
     "lint": "./vendor/bin/phpcs ."
   }

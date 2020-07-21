@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset name="Juko Labs">
+<ruleset name="Juko">
 	<description>PHP ruleset used to build WordPress applications.</description>
 
 	<!-- Exclude NPM and Composer package directories. -->
